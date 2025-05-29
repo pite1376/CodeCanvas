@@ -1,0 +1,373 @@
+/* 暗色主题变量 */
+:root {
+  --light-bg: #ffffff;
+  --light-card-bg: #ffffff;
+  --light-text: #111827;
+  --light-text-secondary: #6b7280;
+  --light-border: #d1d5db;
+  --light-bg-light: #f9fafb;
+  
+  --dark-bg: #1a1a1a;
+  --dark-card-bg: #2d2d2d;
+  --dark-text: #ffffff;
+  --dark-text-secondary: #a3a3a3;
+  --dark-border: #404040;
+  --dark-bg-light: #383838;
+  
+  --brand-blue: #2563eb;
+  --brand-blue-hover: #1d4ed8;
+  --brand-blue-pressed: #1e40af;
+  --brand-blue-dark: #3b82f6;
+  
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  
+  --success-dark: #34d399;
+  --warning-dark: #fbbf24;
+  --error-dark: #f87171;
+  --info-dark: #60a5fa;
+}
+
+/* 暗色主题基础样式 */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  @apply bg-dark-bg text-dark-text;
+}
+
+/* 暗色主题组件样式 */
+.dark .topbar,
+.dark .sidebar,
+.dark .section-header,
+.dark .statusbar {
+  @apply bg-dark-card border-dark-border;
+}
+
+.dark .app-container {
+  @apply bg-dark-bg;
+}
+
+.dark .btn-primary {
+  @apply bg-brand-blue-dark text-white;
+}
+
+.dark .btn-primary:hover:not(:disabled) {
+  @apply bg-brand-blue;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.dark .btn-primary:active:not(:disabled) {
+  @apply bg-brand-blue-hover;
+}
+
+.dark .btn-secondary {
+  @apply bg-dark-card border-dark-border text-dark-text;
+}
+
+.dark .btn-secondary:hover:not(:disabled) {
+  @apply bg-dark-bg;
+  border-color: var(--dark-text-secondary);
+}
+
+.dark .btn-secondary:active:not(:disabled) {
+  @apply bg-dark-border;
+}
+
+.dark .btn-text {
+  @apply text-brand-blue-dark;
+}
+
+.dark .btn-text:hover:not(:disabled) {
+  @apply bg-dark-bg;
+}
+
+.dark .btn-icon {
+  @apply text-dark-text-secondary;
+}
+
+.dark .btn-icon:hover:not(:disabled) {
+  @apply bg-dark-bg text-dark-text;
+}
+
+.dark .tab {
+  @apply text-dark-text-secondary;
+}
+
+.dark .tab-active {
+  @apply text-dark-text border-brand-blue-dark;
+}
+
+/* 暗色主题编辑器样式 */
+.dark .monaco-editor {
+  --monaco-editor-background: #2d2d2d;
+  --monaco-editor-foreground: #ffffff;
+}
+
+/* 暗色主题表单元素 */
+.dark input,
+.dark select,
+.dark textarea {
+  @apply bg-dark-card border-dark-border text-dark-text;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+  @apply border-brand-blue-dark;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  @apply text-dark-text-secondary;
+}
+
+/* 暗色主题卡片和面板 */
+.dark .card,
+.dark .panel {
+  @apply bg-dark-card border-dark-border;
+}
+
+/* 暗色主题下拉菜单 */
+.dark .dropdown-menu {
+  @apply bg-dark-card border-dark-border;
+}
+
+.dark .dropdown-item:hover {
+  @apply bg-dark-bg;
+}
+
+/* 暗色主题模态框 */
+.dark .modal-content {
+  @apply bg-dark-card border-dark-border;
+}
+
+.dark .modal-header,
+.dark .modal-footer {
+  @apply border-dark-border;
+}
+
+/* 暗色主题通知 */
+.dark .notification {
+  @apply bg-dark-card border-dark-border;
+}
+
+.dark .notification-success {
+  @apply border-success-dark;
+}
+
+.dark .notification-warning {
+  @apply border-warning-dark;
+}
+
+.dark .notification-error {
+  @apply border-error-dark;
+}
+
+.dark .notification-info {
+  @apply border-info-dark;
+}
+
+/* 暗色主题工具提示 */
+.dark .tooltip-content {
+  @apply bg-dark-bg-light text-dark-text;
+}
+
+/* 暗色主题滚动条 */
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  @apply bg-dark-bg;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-dark-border rounded;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-text-secondary;
+}
+
+/* 暗色主题代码高亮 */
+.dark .code-block {
+  @apply bg-dark-bg-light border-dark-border;
+}
+
+.dark .syntax-keyword {
+  color: #f472b6; /* 亮粉色 */
+}
+
+.dark .syntax-string {
+  color: #a3e635; /* 亮绿色 */
+}
+
+.dark .syntax-comment {
+  color: #6b6b6b; /* 灰色 */
+}
+
+.dark .syntax-function {
+  color: #60a5fa; /* 亮蓝色 */
+}
+
+.dark .syntax-number {
+  color: #e879f9; /* 亮紫色 */
+}
+
+/* 暗色主题AI助手消息气泡 */
+.dark .message-user {
+  @apply bg-brand-blue-dark bg-opacity-30;
+}
+
+.dark .message-ai {
+  @apply bg-dark-card;
+}
+
+/* 暗色主题图表预览区 */
+.dark .chart-preview {
+  @apply bg-dark-card border-dark-border;
+}
+
+.dark .chart-controls {
+  @apply bg-dark-bg-light;
+}
+
+/* 暗色主题HTML预览器 */
+.dark .preview-controls {
+  @apply bg-dark-bg-light;
+}
+
+.dark .preview-viewport {
+  @apply border-dark-border;
+}
+
+/* 暗色主题骨架屏 */
+.dark .skeleton {
+  @apply bg-dark-bg-light;
+}
+
+/* 暗色主题进度条 */
+.dark .progress-bar {
+  @apply bg-dark-bg;
+}
+
+.dark .progress-value {
+  @apply bg-brand-blue-dark;
+}
+
+/* 暗色主题开关 */
+.dark .switch-track {
+  @apply bg-dark-border;
+}
+
+.dark .switch-track-active {
+  @apply bg-brand-blue-dark;
+}
+
+.dark .switch-thumb {
+  @apply bg-dark-text;
+}
+
+/* 暗色主题徽章 */
+.dark .badge-primary {
+  @apply bg-brand-blue-dark bg-opacity-20 text-brand-blue-dark;
+}
+
+.dark .badge-success {
+  @apply bg-success-dark bg-opacity-20 text-success-dark;
+}
+
+.dark .badge-warning {
+  @apply bg-warning-dark bg-opacity-20 text-warning-dark;
+}
+
+.dark .badge-error {
+  @apply bg-error-dark bg-opacity-20 text-error-dark;
+}
+
+.dark .badge-info {
+  @apply bg-info-dark bg-opacity-20 text-info-dark;
+}
+
+/* 暗色主题分割线 */
+.dark .divider {
+  @apply bg-dark-border;
+}
+
+.dark .divider-handle {
+  @apply bg-dark-text-secondary;
+}
+
+.dark .divider-handle:hover {
+  @apply bg-brand-blue-dark;
+}
+
+/* 暗色主题图标 */
+.dark .icon-default {
+  @apply text-dark-text-secondary;
+}
+
+.dark .icon-active {
+  @apply text-brand-blue-dark;
+}
+
+/* 暗色主题列表项 */
+.dark .list-item:hover {
+  @apply bg-dark-bg;
+}
+
+.dark .list-item-active {
+  @apply bg-brand-blue-dark bg-opacity-20 border-l-2 border-brand-blue-dark;
+}
+
+/* 暗色主题表格 */
+.dark .table-header {
+  @apply bg-dark-bg-light border-dark-border;
+}
+
+.dark .table-row {
+  @apply border-dark-border;
+}
+
+.dark .table-row:nth-child(even) {
+  @apply bg-dark-bg;
+}
+
+.dark .table-row:hover {
+  @apply bg-dark-bg-light;
+}
+
+/* 暗色主题文件树 */
+.dark .file-tree-item:hover {
+  @apply bg-dark-bg;
+}
+
+.dark .file-tree-item-active {
+  @apply bg-brand-blue-dark bg-opacity-20 text-brand-blue-dark;
+}
+
+/* 暗色主题主题切换图标动画 */
+.dark .theme-toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* 暗色主题响应式适配 */
+@media (max-width: 768px) {
+  .dark .mobile-menu {
+    @apply bg-dark-card border-dark-border;
+  }
+  
+  .dark .mobile-menu-item {
+    @apply border-dark-border;
+  }
+  
+  .dark .mobile-menu-item:hover {
+    @apply bg-dark-bg;
+  }
+}
