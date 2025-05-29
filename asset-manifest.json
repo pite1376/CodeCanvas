@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CodeCanvas/static/css/main.cd0a5ce3.css",
-    "main.js": "/CodeCanvas/static/js/main.90de6c2b.js",
+    "main.css": "/CodeCanvas/static/css/main.4fa77742.css",
+    "main.js": "/CodeCanvas/static/js/main.a4633c30.js",
     "static/js/349.bfccc67d.chunk.js": "/CodeCanvas/static/js/349.bfccc67d.chunk.js",
     "static/js/967.ff453b21.chunk.js": "/CodeCanvas/static/js/967.ff453b21.chunk.js",
     "static/js/964.49ea96ba.chunk.js": "/CodeCanvas/static/js/964.49ea96ba.chunk.js",
@@ -34,8 +34,8 @@
     "static/js/813.e71d0b18.chunk.js": "/CodeCanvas/static/js/813.e71d0b18.chunk.js",
     "static/js/194.c082b986.chunk.js": "/CodeCanvas/static/js/194.c082b986.chunk.js",
     "index.html": "/CodeCanvas/index.html",
-    "main.cd0a5ce3.css.map": "/CodeCanvas/static/css/main.cd0a5ce3.css.map",
-    "main.90de6c2b.js.map": "/CodeCanvas/static/js/main.90de6c2b.js.map",
+    "main.4fa77742.css.map": "/CodeCanvas/static/css/main.4fa77742.css.map",
+    "main.a4633c30.js.map": "/CodeCanvas/static/js/main.a4633c30.js.map",
     "349.bfccc67d.chunk.js.map": "/CodeCanvas/static/js/349.bfccc67d.chunk.js.map",
     "967.ff453b21.chunk.js.map": "/CodeCanvas/static/js/967.ff453b21.chunk.js.map",
     "964.49ea96ba.chunk.js.map": "/CodeCanvas/static/js/964.49ea96ba.chunk.js.map",
@@ -69,7 +69,7 @@
     "194.c082b986.chunk.js.map": "/CodeCanvas/static/js/194.c082b986.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd0a5ce3.css",
-    "static/js/main.90de6c2b.js"
+    "static/css/main.4fa77742.css",
+    "static/js/main.a4633c30.js"
   ]
 }
